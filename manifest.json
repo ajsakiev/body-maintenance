@@ -25,6 +25,14 @@
         { "title": "Body Composition", "file": "content/diet/body-composition.md" },
         { "title": "Gut & Metabolic Health", "file": "content/diet/gut-metabolic-health.md" }
       ]
+    },
+    {
+      "title": "Mind & Nervous System",
+      "icon": "◉",
+      "children": [
+        { "title": "Breathwork", "file": "content/mind/breathwork.md" },
+        { "title": "Emotional Awareness", "file": "content/mind/emotional-awareness.md" }
+      ]
     }
   ]
 }
