@@ -190,6 +190,65 @@
       font-weight: 500;
     }
 
+    /* ── Subsection (mid-level: has overview page + grandchildren) ── */
+    .nav-subsection-header {
+      display: flex;
+      align-items: center;
+      padding: 7px 18px 7px 40px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #7fa3cc;
+      transition: background 0.12s, color 0.12s;
+      border-left: 2px solid transparent;
+      line-height: 1.3;
+      user-select: none;
+    }
+
+    .nav-subsection-header:hover { background: var(--sidebar-hover); color: #b8d0ea; }
+
+    .nav-subsection-header.active {
+      background: var(--sidebar-active);
+      color: #e2eaf5;
+      border-left-color: var(--accent-light);
+      font-weight: 500;
+    }
+
+    .nav-subsection-label { flex: 1; }
+
+    .nav-subsection-toggle {
+      font-size: 9px;
+      color: #3d5a84;
+      transition: transform 0.2s;
+      padding: 4px 2px;
+      flex-shrink: 0;
+    }
+
+    .nav-subsection.open .nav-subsection-toggle { transform: rotate(90deg); }
+
+    .nav-grandchildren { display: none; padding: 2px 0; }
+    .nav-subsection.open .nav-grandchildren { display: block; }
+
+    .nav-item-deep {
+      display: flex;
+      align-items: center;
+      padding: 6px 18px 6px 56px;
+      cursor: pointer;
+      font-size: 12px;
+      color: #5d88b4;
+      transition: background 0.12s, color 0.12s;
+      border-left: 2px solid transparent;
+      line-height: 1.3;
+    }
+
+    .nav-item-deep:hover { background: var(--sidebar-hover); color: #b8d0ea; }
+
+    .nav-item-deep.active {
+      background: var(--sidebar-active);
+      color: #e2eaf5;
+      border-left-color: var(--accent-light);
+      font-weight: 500;
+    }
+
     /* ── Main ── */
     .main {
       flex: 1;
@@ -647,8 +706,8 @@
     buildNav(manifest);
     // Load first item by default
     const first = manifest.sections[0];
-    if (first.file) loadPage(first, null);
-    else if (first.children) loadPage(first.children[0], first.title);
+    if (first.file) loadPage(first, null, null);
+    else if (first.children) loadPage(first.children[0], first.title, null);
   }
 
   function buildNav(manifest) {
@@ -656,13 +715,13 @@
     nav.innerHTML = '';
 
     manifest.sections.forEach(section => {
-      if (section.file) {
-        // Single nav item (no children)
+      if (section.file && !section.children) {
+        // Single nav item (Overview)
         const el = document.createElement('div');
         el.className = 'nav-single';
         el.dataset.file = section.file;
         el.innerHTML = `<span class="nav-section-icon">${section.icon || '◦'}</span><span>${section.title}</span>`;
-        el.addEventListener('click', () => { loadPage(section, null); closeSidebar(); });
+        el.addEventListener('click', () => { loadPage(section, null, null); closeSidebar(); });
         nav.appendChild(el);
       } else if (section.children) {
         const sec = document.createElement('div');
@@ -681,12 +740,52 @@
         children.className = 'nav-children';
 
         section.children.forEach(child => {
-          const item = document.createElement('div');
-          item.className = 'nav-item';
-          item.dataset.file = child.file;
-          item.textContent = child.title;
-          item.addEventListener('click', () => { loadPage(child, section.title); closeSidebar(); });
-          children.appendChild(item);
+          if (child.children) {
+            // Mid-level: has its own overview page AND grandchildren
+            const subsec = document.createElement('div');
+            subsec.className = 'nav-subsection';
+
+            const subHeader = document.createElement('div');
+            subHeader.className = 'nav-subsection-header';
+            if (child.file) subHeader.dataset.file = child.file;
+            subHeader.innerHTML = `<span class="nav-subsection-label">${child.title}</span><span class="nav-subsection-toggle">▶</span>`;
+
+            // Click label → load overview page and expand
+            subHeader.querySelector('.nav-subsection-label').addEventListener('click', () => {
+              if (child.file) loadPage(child, section.title, null);
+              subsec.classList.add('open');
+              closeSidebar();
+            });
+            // Click chevron → toggle expand only
+            subHeader.querySelector('.nav-subsection-toggle').addEventListener('click', e => {
+              e.stopPropagation();
+              subsec.classList.toggle('open');
+            });
+
+            const grandchildren = document.createElement('div');
+            grandchildren.className = 'nav-grandchildren';
+
+            child.children.forEach(gc => {
+              const gcItem = document.createElement('div');
+              gcItem.className = 'nav-item-deep';
+              gcItem.dataset.file = gc.file;
+              gcItem.textContent = gc.title;
+              gcItem.addEventListener('click', () => { loadPage(gc, section.title, child.title); closeSidebar(); });
+              grandchildren.appendChild(gcItem);
+            });
+
+            subsec.appendChild(subHeader);
+            subsec.appendChild(grandchildren);
+            children.appendChild(subsec);
+          } else {
+            // Flat leaf item
+            const item = document.createElement('div');
+            item.className = 'nav-item';
+            item.dataset.file = child.file;
+            item.textContent = child.title;
+            item.addEventListener('click', () => { loadPage(child, section.title, null); closeSidebar(); });
+            children.appendChild(item);
+          }
         });
 
         sec.appendChild(header);
@@ -696,10 +795,11 @@
     });
   }
 
-  async function loadPage(item, parentTitle) {
+  async function loadPage(item, sectionTitle, subsectionTitle) {
     activeFile = item.file;
     setActiveNav(item.file);
-    setBreadcrumb(parentTitle, item.title);
+    autoExpandParent();
+    setBreadcrumb(sectionTitle, subsectionTitle, item.title);
 
     const inner = document.getElementById('contentInner');
     inner.innerHTML = '<div class="loading">Loading…</div>';
@@ -719,18 +819,32 @@
   }
 
   function setActiveNav(file) {
-    document.querySelectorAll('.nav-item, .nav-single').forEach(el => {
+    document.querySelectorAll('.nav-item, .nav-single, .nav-item-deep').forEach(el => {
+      el.classList.toggle('active', el.dataset.file === file);
+    });
+    // Also highlight subsection headers when their overview is active
+    document.querySelectorAll('.nav-subsection-header').forEach(el => {
       el.classList.toggle('active', el.dataset.file === file);
     });
   }
 
-  function setBreadcrumb(parent, title) {
-    const bc = document.getElementById('breadcrumb');
-    if (parent) {
-      bc.innerHTML = `<span>Body Maintenance</span><span class="breadcrumb-sep">›</span><span>${parent}</span><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">${title}</span>`;
-    } else {
-      bc.innerHTML = `<span>Body Maintenance</span><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">${title}</span>`;
+  function autoExpandParent() {
+    // After setActiveNav, expand any .nav-subsection that contains the active deep item
+    const activeDeep = document.querySelector('.nav-item-deep.active');
+    if (activeDeep) {
+      const subsec = activeDeep.closest('.nav-subsection');
+      if (subsec) subsec.classList.add('open');
     }
+  }
+
+  function setBreadcrumb(sectionTitle, subsectionTitle, pageTitle) {
+    const bc = document.getElementById('breadcrumb');
+    const sep = '<span class="breadcrumb-sep">›</span>';
+    let html = '<span>Body Maintenance</span>';
+    if (sectionTitle) html += `${sep}<span>${sectionTitle}</span>`;
+    if (subsectionTitle) html += `${sep}<span>${subsectionTitle}</span>`;
+    html += `${sep}<span class="breadcrumb-current">${pageTitle}</span>`;
+    bc.innerHTML = html;
   }
 
   // Hamburger / mobile sidebar

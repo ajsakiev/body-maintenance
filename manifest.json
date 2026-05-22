@@ -11,9 +11,26 @@
       "title": "Exercise",
       "icon": "◈",
       "children": [
-        { "title": "Mobility & Flexibility", "file": "content/exercise/mobility-flexibility.md" },
+        {
+          "title": "Mobility & Flexibility",
+          "file": "content/exercise/mobility-flexibility.md",
+          "children": [
+            { "title": "Hips", "file": "content/exercise/mobility/hips.md" },
+            { "title": "Ankles", "file": "content/exercise/mobility/ankles.md" },
+            { "title": "Shoulders", "file": "content/exercise/mobility/shoulders.md" },
+            { "title": "Thoracic Spine", "file": "content/exercise/mobility/thoracic-spine.md" },
+            { "title": "Daily Routine", "file": "content/exercise/mobility/daily-routine.md" }
+          ]
+        },
+        {
+          "title": "Cardiovascular",
+          "file": "content/exercise/cardiovascular.md",
+          "children": [
+            { "title": "VO₂ Max & Measurement", "file": "content/exercise/cardio/vo2-max.md" },
+            { "title": "Zone 2 Training", "file": "content/exercise/cardio/zone2-training.md" }
+          ]
+        },
         { "title": "Strength & Muscle", "file": "content/exercise/strength-muscle.md" },
-        { "title": "Cardiovascular", "file": "content/exercise/cardiovascular.md" },
         { "title": "Recovery & Sleep", "file": "content/exercise/recovery-sleep.md" }
       ]
     },
@@ -31,6 +48,7 @@
       "icon": "◉",
       "children": [
         { "title": "Breathwork", "file": "content/mind/breathwork.md" },
+        { "title": "Experimental Breathwork", "file": "content/mind/experimental-breathwork.md" },
         { "title": "Emotional Awareness", "file": "content/mind/emotional-awareness.md" }
       ]
     }
