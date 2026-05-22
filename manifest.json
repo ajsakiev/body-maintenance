@@ -1,0 +1,30 @@
+{
+  "title": "Body Maintenance",
+  "subtitle": "Evidence-Based Full Body Care",
+  "sections": [
+    {
+      "title": "Overview",
+      "file": "content/overview.md",
+      "icon": "◎"
+    },
+    {
+      "title": "Exercise",
+      "icon": "◈",
+      "children": [
+        { "title": "Mobility & Flexibility", "file": "content/exercise/mobility-flexibility.md" },
+        { "title": "Strength & Muscle", "file": "content/exercise/strength-muscle.md" },
+        { "title": "Cardiovascular", "file": "content/exercise/cardiovascular.md" },
+        { "title": "Recovery & Sleep", "file": "content/exercise/recovery-sleep.md" }
+      ]
+    },
+    {
+      "title": "Diet",
+      "icon": "◇",
+      "children": [
+        { "title": "Longevity & Anti-Inflammatory", "file": "content/diet/longevity-anti-inflammatory.md" },
+        { "title": "Body Composition", "file": "content/diet/body-composition.md" },
+        { "title": "Gut & Metabolic Health", "file": "content/diet/gut-metabolic-health.md" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body Maintenance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sidebar-w: 260px;
+      --sidebar-bg: #0c1628;
+      --sidebar-border: #1a2e4a;
+      --sidebar-hover: #152240;
+      --sidebar-active: #1a3355;
+      --accent: #2563eb;
+      --accent-light: #3b82f6;
+      --text-primary: #1a2332;
+      --text-secondary: #4b5563;
+      --text-muted: #9ca3af;
+      --border: #e2e8f0;
+      --bg-main: #f8fafc;
+      --bg-content: #ffffff;
+      --radius: 6px;
+
+      --badge-strong-bg: #dcfce7;
+      --badge-strong-text: #15803d;
+      --badge-strong-border: #86efac;
+      --badge-moderate-bg: #dbeafe;
+      --badge-moderate-text: #1d4ed8;
+      --badge-moderate-border: #93c5fd;
+      --badge-emerging-bg: #fef3c7;
+      --badge-emerging-text: #b45309;
+      --badge-emerging-border: #fcd34d;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--sidebar-bg);
+      color: var(--text-primary);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .app { display: flex; height: 100vh; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: var(--sidebar-w);
+      min-width: var(--sidebar-w);
+      background: var(--sidebar-bg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-right: 1px solid var(--sidebar-border);
+      transition: transform 0.25s ease;
+      z-index: 100;
+    }
+
+    .sidebar-header {
+      padding: 22px 18px 16px;
+      border-bottom: 1px solid var(--sidebar-border);
+      flex-shrink: 0;
+    }
+
+    .brand-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4a6fa8;
+      margin-bottom: 6px;
+    }
+
+    .brand-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #e2eaf5;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: #4a6fa8;
+      margin-top: 3px;
+    }
+
+    .sidebar-nav {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 0 20px;
+      scrollbar-width: thin;
+      scrollbar-color: #1e3a5f transparent;
+    }
+
+    .sidebar-nav::-webkit-scrollbar { width: 4px; }
+    .sidebar-nav::-webkit-scrollbar-track { background: transparent; }
+    .sidebar-nav::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 2px; }
+
+    .nav-section { margin-bottom: 2px; }
+
+    .nav-section-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 0;
+      transition: background 0.15s;
+    }
+
+    .nav-section-header:hover { background: var(--sidebar-hover); }
+
+    .nav-section-icon {
+      font-size: 11px;
+      color: #4a6fa8;
+      width: 14px;
+      text-align: center;
+    }
+
+    .nav-section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b8fc4;
+      flex: 1;
+    }
+
+    .nav-section-toggle {
+      font-size: 10px;
+      color: #3d5a84;
+      transition: transform 0.2s;
+    }
+
+    .nav-section.open .nav-section-toggle { transform: rotate(90deg); }
+
+    .nav-children {
+      display: none;
+      padding: 2px 0;
+    }
+
+    .nav-section.open .nav-children { display: block; }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 7px 18px 7px 40px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #7fa3cc;
+      transition: background 0.12s, color 0.12s;
+      border-left: 2px solid transparent;
+      line-height: 1.3;
+    }
+
+    .nav-item:hover { background: var(--sidebar-hover); color: #b8d0ea; }
+
+    .nav-item.active {
+      background: var(--sidebar-active);
+      color: #e2eaf5;
+      border-left-color: var(--accent-light);
+      font-weight: 500;
+    }
+
+    .nav-single {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #7fa3cc;
+      transition: background 0.12s, color 0.12s;
+      border-left: 2px solid transparent;
+    }
+
+    .nav-single:hover { background: var(--sidebar-hover); color: #b8d0ea; }
+
+    .nav-single.active {
+      background: var(--sidebar-active);
+      color: #e2eaf5;
+      border-left-color: var(--accent-light);
+      font-weight: 500;
+    }
+
+    /* ── Main ── */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg-main);
+    }
+
+    .topbar {
+      height: 48px;
+      background: var(--bg-content);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: var(--text-secondary);
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .breadcrumb-sep { color: var(--border); }
+    .breadcrumb-current { color: var(--text-secondary); font-weight: 500; }
+
+    .badge-legend-btn {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-family: inherit;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .badge-legend-btn:hover { border-color: var(--accent); background: #eff6ff; color: var(--accent); }
+
+    .content-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 40px 0;
+    }
+
+    .content-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+      background: var(--bg-content);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    /* ── Markdown Content ── */
+    .content-inner h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 40px 0 8px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--border);
+      letter-spacing: -0.3px;
+      line-height: 1.25;
+    }
+
+    .content-inner h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 40px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: -0.2px;
+    }
+
+    .content-inner h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1e3a5f;
+      margin: 28px 0 10px;
+    }
+
+    .content-inner h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin: 20px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .content-inner p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-primary);
+      margin: 0 0 16px;
+    }
+
+    .content-inner ul, .content-inner ol {
+      margin: 0 0 16px;
+      padding-left: 22px;
+    }
+
+    .content-inner li {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .content-inner li strong { color: #1e3a5f; }
+
+    .content-inner a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .content-inner a:hover { border-bottom-color: var(--accent); }
+
+    .content-inner blockquote {
+      margin: 20px 0;
+      padding: 14px 18px;
+      border-left: 4px solid var(--accent);
+      background: #f0f6ff;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 14px;
+      color: #1e40af;
+    }
+
+    .content-inner blockquote p { margin: 0; color: #1e40af; font-size: 14px; }
+
+    .content-inner table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .content-inner th {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+
+    .content-inner td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      vertical-align: top;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .content-inner tr:nth-child(even) td { background: #f8fafc; }
+
+    .content-inner code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #1e3a5f;
+    }
+
+    .content-inner pre {
+      margin: 16px 0;
+      border-radius: var(--radius);
+      overflow: auto;
+    }
+
+    .content-inner pre code {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 13px;
+    }
+
+    .content-inner hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* ── Evidence Badges ── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      border: 1px solid;
+      margin-left: 5px;
+      vertical-align: middle;
+      font-family: 'JetBrains Mono', monospace;
+      cursor: help;
+      position: relative;
+    }
+
+    .badge-strong {
+      background: var(--badge-strong-bg);
+      color: var(--badge-strong-text);
+      border-color: var(--badge-strong-border);
+    }
+
+    .badge-moderate {
+      background: var(--badge-moderate-bg);
+      color: var(--badge-moderate-text);
+      border-color: var(--badge-moderate-border);
+    }
+
+    .badge-emerging {
+      background: var(--badge-emerging-bg);
+      color: var(--badge-emerging-text);
+      border-color: var(--badge-emerging-border);
+    }
+
+    /* ── Legend Modal ── */
+    .legend-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .legend-overlay.open { display: flex; }
+
+    .legend-modal {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px 32px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+
+    .legend-modal h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .legend-item p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .legend-close {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: var(--text-primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .legend-close:hover { background: #1e3a5f; }
+
+    /* ── Back to Top ── */
+    .back-top {
+      display: none;
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: var(--text-primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 200;
+      transition: background 0.15s;
+    }
+
+    .back-top.visible { display: flex; }
+    .back-top:hover { background: #1e3a5f; }
+
+    /* ── Loading / Error ── */
+    .loading {
+      padding: 60px 40px;
+      color: var(--text-muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* ── Mobile overlay ── */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 90;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+      }
+
+      .sidebar.open { transform: translateX(0); }
+      .sidebar-overlay.open { display: block; }
+      .hamburger { display: flex; }
+
+      .content-inner {
+        padding: 0 20px 60px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .topbar { padding: 0 16px; }
+      .content-scroll { padding: 20px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-label">Reference Guide</div>
+      <div class="brand-title">Body Maintenance</div>
+      <div class="brand-sub">Evidence-Based Full Body Care</div>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+      <div class="breadcrumb" id="breadcrumb">
+        <span>Body Maintenance</span>
+      </div>
+      <button class="badge-legend-btn" id="legendBtn">
+        <span class="badge badge-strong" style="margin:0">S</span>
+        <span class="badge badge-moderate" style="margin:0">M</span>
+        <span class="badge badge-emerging" style="margin:0">E</span>
+        Evidence Guide
+      </button>
+    </div>
+
+    <div class="content-scroll" id="contentScroll">
+      <div class="content-inner" id="contentInner">
+        <div class="loading">Loading…</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Evidence Legend Modal -->
+<div class="legend-overlay" id="legendOverlay">
+  <div class="legend-modal">
+    <h3>Evidence Rating System</h3>
+    <div class="legend-item">
+      <span class="badge badge-strong" style="white-space:nowrap">STRONG</span>
+      <p>Supported by multiple randomized controlled trials (RCTs) or systematic meta-analyses. High confidence this recommendation is correct.</p>
+    </div>
+    <div class="legend-item">
+      <span class="badge badge-moderate" style="white-space:nowrap">MODERATE</span>
+      <p>Supported by observational studies, smaller RCTs, or consistent expert consensus. Good confidence; some uncertainty remains.</p>
+    </div>
+    <div class="legend-item">
+      <span class="badge badge-emerging" style="white-space:nowrap">EMERGING</span>
+      <p>Promising early evidence from animal models, small human studies, or mechanistic data. Not yet consensus. Worth tracking.</p>
+    </div>
+    <button class="legend-close" id="legendClose">Got it</button>
+  </div>
+</div>
+
+<button class="back-top" id="backTop" title="Back to top">↑</button>
+
+<script>
+  const BADGE_MAP = {
+    '[STRONG]':   '<span class="badge badge-strong" title="Strong evidence: RCTs / meta-analyses">STRONG</span>',
+    '[MODERATE]': '<span class="badge badge-moderate" title="Moderate evidence: observational / smaller RCTs">MODERATE</span>',
+    '[EMERGING]': '<span class="badge badge-emerging" title="Emerging evidence: promising, not yet consensus">EMERGING</span>',
+  };
+
+  function applyBadges(html) {
+    return html.replace(/\[STRONG\]|\[MODERATE\]|\[EMERGING\]/g, m => BADGE_MAP[m] || m);
+  }
+
+  marked.setOptions({ breaks: true, gfm: true });
+
+  let manifest = null;
+  let activeFile = null;
+
+  async function loadManifest() {
+    const res = await fetch('manifest.json');
+    manifest = await res.json();
+    buildNav(manifest);
+    // Load first item by default
+    const first = manifest.sections[0];
+    if (first.file) loadPage(first, null);
+    else if (first.children) loadPage(first.children[0], first.title);
+  }
+
+  function buildNav(manifest) {
+    const nav = document.getElementById('sidebarNav');
+    nav.innerHTML = '';
+
+    manifest.sections.forEach(section => {
+      if (section.file) {
+        // Single nav item (no children)
+        const el = document.createElement('div');
+        el.className = 'nav-single';
+        el.dataset.file = section.file;
+        el.innerHTML = `<span class="nav-section-icon">${section.icon || '◦'}</span><span>${section.title}</span>`;
+        el.addEventListener('click', () => { loadPage(section, null); closeSidebar(); });
+        nav.appendChild(el);
+      } else if (section.children) {
+        const sec = document.createElement('div');
+        sec.className = 'nav-section open';
+
+        const header = document.createElement('div');
+        header.className = 'nav-section-header';
+        header.innerHTML = `
+          <span class="nav-section-icon">${section.icon || '◦'}</span>
+          <span class="nav-section-label">${section.title}</span>
+          <span class="nav-section-toggle">▶</span>
+        `;
+        header.addEventListener('click', () => sec.classList.toggle('open'));
+
+        const children = document.createElement('div');
+        children.className = 'nav-children';
+
+        section.children.forEach(child => {
+          const item = document.createElement('div');
+          item.className = 'nav-item';
+          item.dataset.file = child.file;
+          item.textContent = child.title;
+          item.addEventListener('click', () => { loadPage(child, section.title); closeSidebar(); });
+          children.appendChild(item);
+        });
+
+        sec.appendChild(header);
+        sec.appendChild(children);
+        nav.appendChild(sec);
+      }
+    });
+  }
+
+  async function loadPage(item, parentTitle) {
+    activeFile = item.file;
+    setActiveNav(item.file);
+    setBreadcrumb(parentTitle, item.title);
+
+    const inner = document.getElementById('contentInner');
+    inner.innerHTML = '<div class="loading">Loading…</div>';
+    document.getElementById('contentScroll').scrollTop = 0;
+
+    try {
+      const res = await fetch(item.file);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const md = await res.text();
+      const rawHtml = marked.parse(md);
+      const badgedHtml = applyBadges(rawHtml);
+      inner.innerHTML = badgedHtml;
+      inner.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+    } catch (e) {
+      inner.innerHTML = `<div class="loading">Could not load content: ${e.message}</div>`;
+    }
+  }
+
+  function setActiveNav(file) {
+    document.querySelectorAll('.nav-item, .nav-single').forEach(el => {
+      el.classList.toggle('active', el.dataset.file === file);
+    });
+  }
+
+  function setBreadcrumb(parent, title) {
+    const bc = document.getElementById('breadcrumb');
+    if (parent) {
+      bc.innerHTML = `<span>Body Maintenance</span><span class="breadcrumb-sep">›</span><span>${parent}</span><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">${title}</span>`;
+    } else {
+      bc.innerHTML = `<span>Body Maintenance</span><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">${title}</span>`;
+    }
+  }
+
+  // Hamburger / mobile sidebar
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('open');
+  });
+
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+  }
+
+  overlay.addEventListener('click', closeSidebar);
+
+  // Evidence legend
+  document.getElementById('legendBtn').addEventListener('click', () => {
+    document.getElementById('legendOverlay').classList.add('open');
+  });
+  document.getElementById('legendClose').addEventListener('click', () => {
+    document.getElementById('legendOverlay').classList.remove('open');
+  });
+  document.getElementById('legendOverlay').addEventListener('click', e => {
+    if (e.target === document.getElementById('legendOverlay'))
+      document.getElementById('legendOverlay').classList.remove('open');
+  });
+
+  // Back to top
+  const backTop = document.getElementById('backTop');
+  const contentScroll = document.getElementById('contentScroll');
+
+  contentScroll.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', contentScroll.scrollTop > 400);
+  });
+
+  backTop.addEventListener('click', () => {
+    contentScroll.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  loadManifest();
+</script>
+</body>
+</html>
