@@ -70,7 +70,7 @@ Compound lifts (multi-joint) train more muscle per unit of time and drive greate
 
 | Pattern | Primary Movement | Examples |
 |---------|-----------------|----------|
-| Hip hinge | Deadlift pattern | Romanian deadlift, trap bar deadlift |
+| Hip hinge | Deadlift pattern | [Romanian deadlift](https://www.youtube.com/watch?v=5bJEigM5iVg), trap bar deadlift |
 | Squat | Knee dominant | Back squat, goblet squat, split squat |
 | Push (horizontal) | Chest, shoulders, triceps | Bench press, push-up |
 | Push (vertical) | Overhead press pattern | Overhead press, landmine press |

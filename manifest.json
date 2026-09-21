@@ -19,7 +19,9 @@
             { "title": "Ankles", "file": "content/exercise/mobility/ankles.md" },
             { "title": "Shoulders", "file": "content/exercise/mobility/shoulders.md" },
             { "title": "Thoracic Spine", "file": "content/exercise/mobility/thoracic-spine.md" },
-            { "title": "Daily Routine", "file": "content/exercise/mobility/daily-routine.md" }
+            { "title": "Daily Routine", "file": "content/exercise/mobility/daily-routine.md" },
+            { "title": "Strength & Flexibility", "file": "content/exercise/mobility/strength-and-flexibility.md" },
+            { "title": "Lengthened Position Training", "file": "content/exercise/mobility/lengthened-position-training.md" }
           ]
         },
         {
@@ -27,11 +29,31 @@
           "file": "content/exercise/cardiovascular.md",
           "children": [
             { "title": "VO₂ Max & Measurement", "file": "content/exercise/cardio/vo2-max.md" },
-            { "title": "Zone 2 Training", "file": "content/exercise/cardio/zone2-training.md" }
+            { "title": "Zone 2 Training", "file": "content/exercise/cardio/zone2-training.md" },
+            { "title": "Zone 2 Running Program", "file": "content/exercise/cardio/running-program.md" }
           ]
         },
-        { "title": "Strength & Muscle", "file": "content/exercise/strength-muscle.md" },
-        { "title": "Recovery & Sleep", "file": "content/exercise/recovery-sleep.md" }
+        {
+          "title": "Strength & Muscle",
+          "file": "content/exercise/strength-muscle.md",
+          "children": [
+            { "title": "Relative Strength", "file": "content/exercise/strength/relative-strength.md" },
+            { "title": "Year One Gym Program", "file": "content/exercise/strength/gym-program.md" },
+            { "title": "Kettlebell AMRAP Program", "file": "content/exercise/strength/kettlebell-amrap.md" },
+            { "title": "Movements & Equipment", "file": "content/exercise/strength/movement-library.md" }
+          ]
+        },
+        {
+          "title": "Recovery & Sleep",
+          "file": "content/exercise/recovery-sleep.md",
+          "children": [
+            { "title": "DOMS & Soreness", "file": "content/exercise/recovery/doms-soreness.md" },
+            { "title": "Active vs. Passive Recovery", "file": "content/exercise/recovery/active-vs-passive.md" },
+            { "title": "Soft Tissue Work", "file": "content/exercise/recovery/soft-tissue.md" },
+            { "title": "Thermal Therapy", "file": "content/exercise/recovery/thermal-therapy.md" },
+            { "title": "Recovery Nutrition", "file": "content/exercise/recovery/recovery-nutrition.md" }
+          ]
+        }
       ]
     },
     {

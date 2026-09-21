@@ -33,7 +33,8 @@ From standing, lower to seated cross-legged on the floor, then rise without usin
 
 **What it targets:** Hip internal and external rotation simultaneously  
 **Time:** 3–5 min/side  
-**When:** Daily if possible; morning or pre-Pilates
+**When:** Daily if possible; morning or pre-Pilates  
+**Video:** [Hip MOBILITY and CONTROL — The 90/90 PAILs and RAILs](https://www.youtube.com/watch?v=4JvLcpIIeog)
 
 **Setup:** Sit with front shin parallel to your body (90° at knee), rear shin parallel behind you (also 90°). Sit as tall as possible.
 
@@ -59,7 +60,8 @@ Relax both contractions. Now use your own muscles to push further into the stret
 
 **What it targets:** Full joint circumduction; neurological ownership of the hip joint  
 **Time:** 1 min/side  
-**When:** Every morning as a "joint health" practice
+**When:** Every morning as a "joint health" practice  
+**Video:** [How To Do Hip CARs — Movement Breakdown](https://www.youtube.com/watch?v=zbH4XmSREoc)
 
 **How to do it:**
 1. Stand on one leg, holding a wall for balance
@@ -96,7 +98,8 @@ Relax both contractions. Now use your own muscles to push further into the stret
 
 **What it targets:** Hip flexors (psoas, rectus femoris), restricted by prolonged sitting  
 **Time:** 60–90 sec/side  
-**When:** After sitting, post-Pilates, evening
+**When:** After sitting, post-Pilates, evening  
+**Video:** [Kneeling Hip Flexor Stretch](https://www.youtube.com/watch?v=Q4Ko275cluo)
 
 **How to do it:**
 1. Kneeling lunge position — right knee on floor, left foot forward
@@ -113,7 +116,8 @@ Relax both contractions. Now use your own muscles to push further into the stret
 
 **What it targets:** External hip rotators (piriformis, glute medius), often very tight  
 **Time:** 2–3 min/side  
-**When:** Post-workout, evening, after long periods of sitting
+**When:** Post-workout, evening, after long periods of sitting  
+**Video:** [How to do Pigeon Pose for beginners](https://www.youtube.com/watch?v=46phRH_09yM)
 
 **How to do it:**
 1. From all fours, bring one shin forward and lay it on the ground in front of you (ideally parallel to the front of your mat, working toward that over time)
@@ -130,7 +134,8 @@ Relax both contractions. Now use your own muscles to push further into the stret
 
 **What it targets:** Hip adductors, groin, inner thigh — often the limiting factor for deep squat depth  
 **Time:** 2–3 min  
-**When:** Evening or after cardio
+**When:** Evening or after cardio  
+**Video:** [The Frog Stretch](https://www.youtube.com/watch?v=GDvToqsB55k)
 
 **How to do it:**
 1. On all fours, slide knees wide until you feel a stretch in the groin

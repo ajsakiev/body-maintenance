@@ -32,6 +32,8 @@ A randomized controlled trial from Stanford (Balban et al., 2023, *Cell Reports 
 
 ### How to Do It
 
+**Video:** [Breathing Techniques to Reduce Stress and Anxiety — Dr. Andrew Huberman](https://www.youtube.com/watch?v=kSZKIupBUuc)
+
 1. Inhale through the nose fully
 2. At the top, take a second short sharp inhale to maximally inflate the alveoli
 3. Long, slow exhale through the mouth until lungs are empty
@@ -76,6 +78,8 @@ Used by Navy SEALs, surgeons, and emergency personnel. The mechanism is CO₂ eq
 
 ### Protocol
 
+**Video:** [Box Breathing — Reduce Anxiety — Navy SEAL Method](https://www.youtube.com/watch?v=RckZsDFiQjo)
+
 1. Inhale for 4 counts
 2. Hold for 4 counts
 3. Exhale for 4 counts
@@ -114,6 +118,8 @@ A follow-up study confirmed the **breathing component alone** (not cold exposure
 - Altered perception of cold [MODERATE]
 
 ### Protocol (Basic)
+
+**Video:** [Guided Wim Hof Method Breathing](https://www.youtube.com/watch?v=tybOi4hjZFQ)
 
 1. 30–40 deep, full breaths (in through nose, out through mouth — don't fully exhale)
 2. After last exhale, hold breath on empty lungs as long as comfortable
@@ -164,7 +170,7 @@ Nasal breathing:
 
 **Huberman's recommendation:** 10–30 minutes of NSDR after sleep deprivation or in the early afternoon restores cognitive performance. Unlike a nap, there's no grogginess on waking.
 
-**Protocol:** Lie down. Use a guided NSDR recording (Huberman Lab has a free 10-minute version on YouTube). Follow the body awareness instructions. Most people notice a shift in consciousness within 5 minutes.
+**Protocol:** Lie down. Use a guided NSDR recording ([Huberman Lab's free 10-minute version](https://www.youtube.com/watch?v=KHIbgSN2qAU)). Follow the body awareness instructions. Most people notice a shift in consciousness within 5 minutes.
 
 ---
 

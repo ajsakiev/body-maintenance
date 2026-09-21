@@ -42,7 +42,8 @@ Sit in a chair, feet flat. Extend your upper back over the back of the chair. Ho
 
 **What it targets:** Thoracic extension (the most commonly lost range)  
 **Time:** 3–5 min  
-**When:** Morning; before Pilates; whenever upper back feels stiff
+**When:** Morning; before Pilates; whenever upper back feels stiff  
+**Video:** [Foam roller thoracic spine extension — Physio REHAB](https://www.youtube.com/watch?v=qCrYe698zJU)
 
 **How to do it:**
 1. Place a foam roller perpendicular to your spine, at mid-back (approximately T6–T8)
@@ -64,7 +65,8 @@ Sit in a chair, feet flat. Extend your upper back over the back of the chair. Ho
 
 **What it targets:** Thoracic rotation — the most functional direction for spine health  
 **Time:** 2–3 min/side  
-**When:** Morning; between long work sessions; before Pilates
+**When:** Morning; between long work sessions; before Pilates  
+**Video:** [Open Books — Sidelying Thoracic Rotation](https://www.youtube.com/watch?v=rDviWORCWEw)
 
 **How to do it:**
 1. Lie on your side, knees stacked and bent to 90° (like sleeping position)
@@ -127,7 +129,8 @@ Sit in a chair, feet flat. Extend your upper back over the back of the chair. Ho
 
 **What it targets:** Thoracic rotation with shoulder involvement  
 **Time:** 2 min  
-**When:** Part of any morning mobility sequence; see also Shoulders page
+**When:** Part of any morning mobility sequence; see also Shoulders page  
+**Video:** [Thread the Needle Exercise for the Thoracic Spine](https://www.youtube.com/watch?v=uenqxybA9kU)
 
 **How to do it:**
 1. All fours — hand directly under shoulder, knee under hip
@@ -143,7 +146,8 @@ Sit in a chair, feet flat. Extend your upper back over the back of the chair. Ho
 
 **What it targets:** Segmental spinal mobility — separating thoracic and lumbar movement  
 **Time:** 2 min  
-**When:** Warmup before any exercise; first thing in the morning
+**When:** Warmup before any exercise; first thing in the morning  
+**Video:** [How to do a Segmental Cat Cow](https://www.youtube.com/watch?v=mSzU47-uPb4)
 
 **How to do it:**
 1. All fours, neutral spine

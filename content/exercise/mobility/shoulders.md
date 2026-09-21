@@ -31,7 +31,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Full glenohumeral joint range; joint health maintenance  
 **Time:** 1 min/side  
-**When:** Every morning — the most important shoulder exercise to do daily
+**When:** Every morning — the most important shoulder exercise to do daily  
+**Video:** [Controlled Articular Rotations (CARs) — Shoulder](https://www.youtube.com/watch?v=CLWFwun1BfQ)
 
 **How to do it:**
 1. Stand with feet shoulder-width; brace your core and squeeze your glutes to lock the trunk still
@@ -51,7 +52,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Glenohumeral joint capsule; the restriction that limits overhead range  
 **Time:** 90 sec/side  
-**When:** Before shoulder work; when shoulders feel compressed or tight
+**When:** Before shoulder work; when shoulders feel compressed or tight  
+**Video:** [Banded Shoulder Distraction](https://www.youtube.com/watch?v=dO4Bc0xr9kU)
 
 **Setup:** Resistance band anchored at shoulder height or above (door anchor or pull-up bar).
 
@@ -70,7 +72,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Serratus anterior activation + overhead shoulder range  
 **Time:** 2 min  
-**When:** Before Pilates or any upper body work; daily is fine
+**When:** Before Pilates or any upper body work; daily is fine  
+**Video:** [Wall Slides for Serratus Anterior Activation](https://www.youtube.com/watch?v=oMSVe7PWJ3o)
 
 **How to do it:**
 1. Stand facing a wall, forearms on the wall at shoulder height (elbows 90°)
@@ -89,7 +92,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Pectoralis minor and anterior capsule — restricts shoulder external rotation and overhead reach  
 **Time:** 2–3 min/side  
-**When:** After periods of desk work; post-Pilates; evening
+**When:** After periods of desk work; post-Pilates; evening  
+**Video:** [Best Way To Stretch Your Pecs — Pec Stretch With PAILs & RAILs](https://www.youtube.com/watch?v=m3yErtawRAs)
 
 **How to do it:**
 1. Stand in a doorway, forearm against the doorframe at 90° (upper arm parallel to floor)
@@ -112,7 +116,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Posterior shoulder capsule; restricts internal rotation  
 **Time:** 60–90 sec/side  
-**When:** Post-workout; evening; if you notice asymmetrical internal rotation
+**When:** Post-workout; evening; if you notice asymmetrical internal rotation  
+**Video:** [Shoulder Posterior Capsule Stretch — Side Lying Sleeper Stretch](https://www.youtube.com/watch?v=TVLLzEsKamA)
 
 **How to do it:**
 1. Lie on your side, shoulder directly below you on the floor
@@ -129,7 +134,8 @@ With elbow at 90°, upper arm at your side, rotate the forearm outward. How far 
 
 **What it targets:** Thoracic rotation + shoulder mobility through the back  
 **Time:** 2 min  
-**When:** Morning; pre-Pilates; any time the upper back feels locked
+**When:** Morning; pre-Pilates; any time the upper back feels locked  
+**Video:** [Thread the Needle Exercise for the Thoracic Spine](https://www.youtube.com/watch?v=uenqxybA9kU)
 
 **How to do it:**
 1. All fours position (hands under shoulders, knees under hips)

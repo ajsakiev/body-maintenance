@@ -42,7 +42,8 @@ The banded mobilization below targets the joint capsule (most under-addressed). 
 
 **What it targets:** Ankle joint capsule (talus posterior glide)  
 **Time:** 2–3 min/side  
-**When:** Before squatting, lunging, or Pilates; before any of the stretches below
+**When:** Before squatting, lunging, or Pilates; before any of the stretches below  
+**Video:** [Banded Joint Mobilizations for Stiff Ankles — Squat University](https://www.youtube.com/watch?v=ILSbK8RnGdI)
 
 **Setup:** You need a resistance band anchored at floor level (loop around a fixed pole or put it under a door).
 
@@ -97,7 +98,8 @@ The banded mobilization below targets the joint capsule (most under-addressed). 
 
 **What it targets:** Full ankle joint range in all planes; joint health and neurological ownership  
 **Time:** 1 min/side  
-**When:** Every morning
+**When:** Every morning  
+**Video:** [Ankle CAR — Controlled Articular Rotation](https://www.youtube.com/watch?v=vIDJiMShg4o)
 
 **How to do it:**
 1. Seated or standing on one leg
