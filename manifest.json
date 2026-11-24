@@ -40,6 +40,8 @@
             { "title": "Relative Strength", "file": "content/exercise/strength/relative-strength.md" },
             { "title": "Year One Gym Program", "file": "content/exercise/strength/gym-program.md" },
             { "title": "Kettlebell AMRAP Program", "file": "content/exercise/strength/kettlebell-amrap.md" },
+            { "title": "Kettlebell Sessions", "file": "content/exercise/strength/kettlebell-sessions.md" },
+            { "title": "Kettlebell Benchmark Log", "file": "content/exercise/strength/kettlebell-log.md" },
             { "title": "Movements & Equipment", "file": "content/exercise/strength/movement-library.md" }
           ]
         },
@@ -62,6 +64,7 @@
       "children": [
         { "title": "Longevity & Anti-Inflammatory", "file": "content/diet/longevity-anti-inflammatory.md" },
         { "title": "Body Composition", "file": "content/diet/body-composition.md" },
+        { "title": "Protein Playbook", "file": "content/diet/protein-playbook.md" },
         { "title": "Gut & Metabolic Health", "file": "content/diet/gut-metabolic-health.md" }
       ]
     },

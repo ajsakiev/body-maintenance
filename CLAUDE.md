@@ -65,7 +65,21 @@ The CDN `<script>` tags still need a network connection on first load; the brows
 
 The strength deep-dives are written around one specific goal: **relative strength** — getting stronger while staying lean, rather than hypertrophy. `content/exercise/strength/gym-program.md` is a 12-month, 2–3×/week plan for a returning lifter using commercial-gym equipment (Vasa). If editing these, keep the framing consistent: heavy loads, low-to-moderate volume, long rests, calories at maintenance. The parent `strength-muscle.md` remains general-purpose and does not assume that goal.
 
-`content/exercise/strength/kettlebell-amrap.md` is the companion conditioning program: a 12-week, 3×/week plan built on 20-minute AMRAPs. Its load-bearing ideas are the three session intents (**Pace** = nasal-breathing aerobic, **Heavy** = one bell up with rest-as-needed, **Push** = beat the log), a fixed **Benchmark** session retested every 4 weeks, and the progression order *rounds → load → complexity*. Bell sizes are given by test ("20 clean swings fresh") rather than by prescribed weight, so the page works for any bell collection. The gym program and the kettlebell page cross-link in their See Also sections and share a "Combining With the Gym" scheduling table — if either program's weekly structure changes, check that table still matches.
+`content/exercise/strength/kettlebell-amrap.md` is the companion conditioning program: a 12-week, 3×/week plan built on 20-minute AMRAPs. Its load-bearing ideas are the three session intents (**Pace** = nasal-breathing aerobic, **Heavy** = one bell up with rest-as-needed, **Push** = beat the log), a fixed **Benchmark** (Session 1 frozen at its week-1 form and run as a nasal-effort test *in place of* a Pace day in weeks 1/4/8/12, not an extra session; a "Week by Week" table spells out all 12 weeks), and the progression order *rounds → load → complexity*. Bell sizes are given by test ("20 clean swings fresh") rather than by prescribed weight, so the page works for any bell collection. The gym program and the kettlebell page cross-link in their See Also sections and share a "Combining With the Gym" scheduling table — if either program's weekly structure changes, check that table still matches.
+
+The 12 weeks run **Pace · Heavy · Push from week 1** because the user already had ~6 weeks of training when starting. Push is capped at 8/10 in weeks 1–2 only, and a note covers true beginners (Pace · Pace · Push until week 5). The warm-up ramp includes deadlifts before the swings and cleans every session. Session 3's fourth movement is a one-arm row, not a halo: halos stay in the warm-up, per the page's own "not inside the clock" rule.
+
+### Kettlebell Sessions (workouts-only page)
+
+`content/exercise/strength/kettlebell-sessions.md` is **deliberately bare**: warm-up, session table and cool-down for Pace, Heavy and Push, with no explanation, evidence tags or See Also. The user asked for "zero info" so it can be followed mid-workout. It duplicates the session templates and the warm-up ramp from `kettlebell-amrap.md`, so **any change to either must be mirrored on this page.**
+
+### Kettlebell Benchmark Log (user's personal data)
+
+`content/exercise/strength/kettlebell-log.md` holds the user's real Benchmark scores. The user reports a result in chat (bell, score like "11 rounds + 10 swings + 3 squats", nasal Y/N, notes); Claude fills that week's row in the current cycle table and runs `python3 build.py`. Compute **Total reps** as rounds × 30 + partial reps (one Session 1 round = 10 swings + 5 squats + 5 push-ups + 10 rows), and **vs. Week 1** as % change in total reps against the first score *at the same bell*. A bell change starts a new baseline; restarting the 12-week arc adds a new "Cycle N" table. If the Session 1 template ever changes, the 30-reps-per-round figure on the log page must change with it.
+
+### Diet: Protein Playbook
+
+`content/diet/protein-playbook.md` is the practical companion to Body Composition, written for a 225 lb lifter with a chaotic eating schedule who wants to keep sweets and snacks and isn't chasing a shredded look. Load-bearing ideas: the target is **1.6 g/kg (~160 g for 102 kg)**, not the 2.2 g/kg ceiling; **anchors** (two shakes + one protein-built meal) instead of meal plans; habits are added **one at a time** with checkbox tracking before gram counting. Fast food and snack values are approximate and labeled that way.
 
 ### Cardiovascular subtree
 

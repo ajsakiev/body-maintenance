@@ -59,7 +59,7 @@ Same format, three different jobs. This is polarised training applied inside a s
 | Day | Intent | Effort | Bell | Reps | Breathing | Success looks like |
 |---|---|---|---|---|---|---|
 | **Pace** | Aerobic base, movement practice | 6–7/10 | Working bell | 8–10 | Nose only, could speak in short sentences | Even splits, same rounds in the second 10 min as the first |
-| **Heavy** | Strength | 8/10 per rep, fully rested between | One size up | 3–5 | Rest until you could hold a conversation | 8–12 rounds with zero missed or ugly reps |
+| **Heavy** | Strength | 8/10 per rep, fully rested between | One size up | 3–5 | Rest until you could hold a conversation | 5–8 rounds with zero missed or ugly reps |
 | **Push** | Performance | 9/10 | Working bell | 5–8 | Mouth breathing fine in the last 5 min | Beat the log |
 
 The Pace day is where most people go wrong. It will feel too easy. That is the point — it is doing the same job as [Zone 2](content/exercise/cardio/zone2-training.md) work, and it is the day that makes the Push day possible. If your nose breathing fails, you have drifted into a Push session, and you now have two of them in a week and no base.
@@ -73,6 +73,7 @@ Everything you need, organised by pattern. Each column to the right is harder th
 | Pattern | Foundation | Progression | Advanced | Notes |
 |---|---|---|---|---|
 | **Hinge — ballistic** | Two-hand swing | One-arm swing | Snatch | The engine of the program. Every round has one |
+| **Clean** | Clean from a dead stop | Continuous cleans | Double clean | Hips drive the bell up; it lands beside the forearm, not on it. Never curl it |
 | **Hinge — grind** | Kettlebell deadlift | Single-leg deadlift | Double-bell deadlift | Heavy-day staple |
 | **Squat** | Goblet squat | Front squat, rack position | Double front squat | Goblet stays useful forever |
 | **Lunge** | Goblet reverse lunge | Rack reverse lunge | Double rack lunge | Reverse, not forward — kinder to the knee |
@@ -105,11 +106,13 @@ These are the Block 1 templates. Later blocks swap movements one column to the r
 | 3 | Push-up | 5 |
 | 4 | Bent-over row | 5 per side |
 
-Target: 14–18 rounds on first exposure, at a bell you can swing 20 clean reps with when fresh. Twenty rounds is 200 swings — that is a lot of hinge, and it is the trigger to move up a bell (below).
+Target: 8–12 rounds on first exposure, at a bell you can swing 20 clean reps with when fresh. One round takes about 75 seconds even with no rest, and nose breathing means you will need short breathers, so the first score is lower than it looks like it should be. Fifteen rounds (150 swings) is the trigger to move up a bell (below).
+
+This is also the Benchmark workout. In test weeks you run it as a test instead of as a normal Pace day — see **The Benchmark** section below for what changes.
 
 ### Session 2 — Heavy
 
-20-minute AMRAP, but the clock is a cap, not a target. Rest as long as you need between rounds. If you get more than 12 rounds, the bell is too light.
+20-minute AMRAP, but the clock is a cap, not a target. Rest as long as you need between rounds. If you get more than 8 rounds, the bell is too light.
 
 | # | Movement | Reps |
 |---|---|---|
@@ -118,7 +121,7 @@ Target: 14–18 rounds on first exposure, at a bell you can swing 20 clean reps 
 | 3 | Kettlebell deadlift *(heaviest bell you have)* | 5 |
 | 4 | Suitcase carry | 20 m per side |
 
-Target: 8–12 rounds, every rep clean. This day is closest in spirit to the [Year One Gym Program](content/exercise/strength/gym-program.md) — heavy enough to drive neural adaptation, rested enough that the load stays honest.
+Target: 5–8 rounds, every rep clean. Each round is about two minutes of work before any rest, so the count stays low. This day is closest in spirit to the [Year One Gym Program](content/exercise/strength/gym-program.md) — heavy enough to drive neural adaptation, rested enough that the load stays honest.
 
 ### Session 3 — Push
 
@@ -129,7 +132,7 @@ Target: 8–12 rounds, every rep clean. This day is closest in spirit to the [Ye
 | 1 | One-arm swing *(or 16 two-hand)* | 8 per side |
 | 2 | Goblet reverse lunge | 5 per side |
 | 3 | Push press | 5 per side |
-| 4 | Halo | 5 per direction |
+| 4 | One-arm row | 5 per side |
 
 Target: whatever beats the last Push session by a round or a partial. Log it.
 
@@ -141,11 +144,22 @@ Target: whatever beats the last Push session by a round or a partial. Log it.
 
 ## The Benchmark
 
-Session 1 is your benchmark. Run it in weeks 1, 4, 8, and 12, and hold everything constant: same bell, same standards, same warm-up, same rough time of day. Rounds plus partial reps is your score.
+The Benchmark is not an extra workout. It is Session 1, the Pace workout you already do every week, run as a **test** in weeks 1, 4, 8, and 12. In those weeks it replaces one Pace day. You don't add a session.
+
+| | Normal Pace day | Benchmark day |
+|---|---|---|
+| **When** | Every week | Weeks 1, 4, 8, 12, in place of a Pace day |
+| **Workout** | Session 1, but it can evolve: an extra round, one-arm swings, the next movement column | Session 1 exactly as you ran it in week 1: same bell, same four movements, same reps |
+| **Effort** | Nose breathing, 6–7/10 | The same. Nose breathing, **not** an all-out effort |
+| **Counting** | A rough count is fine | Exact: rounds plus partial reps |
+| **Conditions** | Whenever it fits | Same warm-up, same rough time of day, reasonably rested |
+| **Purpose** | Aerobic base, grooving the swing | A score you can compare to week 1 |
+
+Why keep them separate? The Pace day is allowed to change over twelve weeks, so its round count stops being comparable. The Benchmark stays frozen, so the only thing that can move its score is you. Because the effort is fixed at nose breathing, more rounds means you got fitter, not that you tried harder. It's the same idea as the [Running Program](content/exercise/cardio/running-program.md) benchmark, which measures pace at a fixed heart rate. The one planned change is the bell-size rule below.
 
 This single number is what tells you whether the program is working. Individual Push sessions bounce around with sleep and stress; the benchmark every four weeks does not.
 
-Realistic expectations for a returning lifter: **20–35% more rounds over the first twelve weeks**, most of it in weeks 1–8. When you reach 20 rounds at a given bell, the benchmark moves up one bell size and your score will drop by roughly a quarter. That drop is progress, not regression — you are now doing the same work with more load.
+Realistic expectations for a returning lifter: **20–35% more rounds over the first twelve weeks**, most of it in weeks 1–8. When you reach 15 rounds at a given bell, the benchmark moves up one bell size. For most people that takes more than one twelve-week cycle. After the move-up, your score will drop by roughly a quarter. That drop is progress, not regression — you are now doing the same work with more load.
 
 ---
 
@@ -155,24 +169,46 @@ Three blocks and a reset. The exercises change one column per block; the templat
 
 | Block | Weeks | The week | Effort caps | What changes |
 |---|---|---|---|---|
-| **1. Foundation** | 1–4 | Pace · Pace · Push *(capped at 8/10)* | Nose breathing on all Pace days | Learn the movements, establish the benchmark, build the habit |
-| **2. Build** | 5–8 | Pace · Heavy · Push | Push at full 9/10; Heavy day introduced | Move up a bell on Heavy day when you reach 12 clean rounds |
+| **1. Foundation** | 1–4 | Pace · Heavy · Push | Push capped at 8/10 in weeks 1–2; nose breathing on all Pace days | Learn the movements, establish the benchmark, start the Heavy day |
+| **2. Build** | 5–8 | Pace · Heavy · Push | Pace stays nasal; Push at full 9/10 | Move up a bell on Heavy day when you reach 8 clean rounds |
 | **3. Push** | 9–11 | Pace · Heavy · Push *(+ optional 4th Pace)* | None — chase the log | Progression column moves one step right on any movement that feels routine |
-| **4. Reset** | 12 | Short Pace · rest · **Benchmark retest** | Two 10-minute AMRAPs at 6/10, then the test | Log the score, then restart the arc at a higher floor |
+| **4. Reset** | 12 | Short Pace · Short Pace · **Benchmark retest** | Two 10-minute AMRAPs at 6/10, then the test | Log the score, then restart the arc at a higher floor |
+
+### Week by Week
+
+Three sessions a week, in this order. Pace always comes first and Push last, so the hardest day gets the longest gap after it.
+
+| Week | Day 1 | Day 2 | Day 3 | Notes |
+|---|---|---|---|---|
+| 1 | **Benchmark** | Heavy | Push *(8/10 cap)* | Record your first score |
+| 2 | Pace | Heavy | Push *(8/10 cap)* | Film your swings from the side |
+| 3 | Pace | Heavy | Push | Push at full effort from here |
+| 4 | **Benchmark** | Heavy | Push | First retest |
+| 5 | Pace | Heavy | Push | |
+| 6 | Pace | Heavy | Push | |
+| 7 | Pace | Heavy | Push | |
+| 8 | **Benchmark** | Heavy | Push | Retest |
+| 9 | Pace | Heavy | Push | Optional 4th session, Pace only |
+| 10 | Pace | Heavy | Push | Optional 4th session, Pace only |
+| 11 | Pace | Heavy | Push | Optional 4th session, Pace only |
+| 12 | Short Pace | Short Pace | **Benchmark** | Short Pace = one 10-min AMRAP at 6/10. Test fresh at the end of the week |
+
+**Completely new to training?** Run weeks 1–4 as Pace · Pace · Push (8/10 cap) instead, and start the Heavy day in week 5. The extra Pace day is low-stress practice for the swing before any heavy work.
 
 ### Block 1 — Foundation (Weeks 1–4)
 
-The block that decides whether the swing becomes an asset or a back complaint. Two Pace days a week means a lot of low-stress reps to groove the hinge before you ever push the pace.
+Written for someone already training. The Heavy day starts in week 1. The only concession to the movements being new is the 8/10 cap on Push for the first two weeks.
 
 - Run the Benchmark in week 1 at an effort you could repeat tomorrow. Record it
-- The Push day is capped at 8/10 — hard, but with a round left in the tank
+- Heavy day uses a bell one size up (4 kg / ~9 lb). If the clean is new to you, use your working bell for weeks 1–2 and move up in week 3. Presses may need to become push presses at first; that is fine
+- The Push day is capped at 8/10 in weeks 1–2 — hard, but with a round left in the tank. Full effort from week 3
 - Film a set of swings from the side in week 2. You are looking for a flat back, hips going *back* rather than down, and the bell floating to chest height on hip snap alone, arms relaxed
 - Expect some hand soreness and posterior-chain DOMS in weeks 1–2, then a sharp drop-off. See [DOMS & Soreness](content/exercise/recovery/doms-soreness.md)
 - Retest the Benchmark in week 4
 
 ### Block 2 — Build (Weeks 5–8)
 
-- The Heavy day arrives. Move to a bell one size up (4 kg / ~9 lb) for it. Presses may need to become push presses at first; that is fine
+- Heavy day: move up a bell when you reach 8 clean rounds
 - Push day at full effort, but form still ends the set
 - Pace day stays nasal. If it is getting easy, add one round rather than speed — or move the swings to one-arm and keep the count
 - Retest the Benchmark in week 8
@@ -186,7 +222,7 @@ The block that decides whether the swing becomes an asset or a back complaint. T
 
 ### Week 12 — Reset and Retest
 
-- Two easy 10-minute AMRAPs at 6/10 early in the week
+- Two easy 10-minute AMRAPs at 6/10, on separate days early in the week
 - Retest the Benchmark at the end of the week, fresh
 - Compare week 12 to week 1. Then restart Block 1 with one change: a heavier bell, or the next movement column — not both
 
@@ -200,8 +236,8 @@ Four rules, in priority order. When two of them disagree, the one higher up wins
 
 **2. Load second.** Two triggers move you up a bell size:
 
-- Benchmark (Pace) reaches **20 rounds**
-- Heavy day reaches **12 rounds with every rep clean**
+- Benchmark (Pace) reaches **15 rounds**
+- Heavy day reaches **8 rounds with every rep clean**
 
 Standard bells step in 4 kg increments (8, 12, 16, 20, 24, 28, 32 kg — roughly 18, 26, 35, 44, 53, 62, 70 lb). One step is a 17–25% load jump, so expect rounds to fall by about that and take 3–4 weeks to climb back. That climb is where the strength is built.
 
@@ -249,16 +285,16 @@ Common starting points — adjust to your own tests: 12–16 kg working bell for
 
 ---
 
-## Session Structure
+## Warm-up & Cool-down
 
 **Warm-up — 8 minutes, every session:**
 
 1. 2 min easy movement — brisk walk, skipping, jog in place. Raise temperature, nothing more
 2. 3–4 movements from the [Daily Mobility Routine](content/exercise/mobility/daily-routine.md), biased to [hips](content/exercise/mobility/hips.md) and [thoracic spine](content/exercise/mobility/thoracic-spine.md)
-3. Bell ramp with the working bell: 10 halos, 5 goblet squats with a 3-second pause at the bottom, 2 × 10 swings building to full speed, 3 presses per side
+3. Bell ramp with the working bell: 10 halos, 5 goblet squats with a 3-second pause at the bottom, 5 slow deadlifts, 2 × 10 swings building to full speed, 3 cleans per side, 3 presses per side
 4. **Heavy day only:** one slow Turkish get-up per side before the ramp
 
-The ramp is not optional. The first ten swings tell you what today's hinge looks like before you commit to twenty minutes of it.
+The ramp is not optional. The deadlifts set the hinge before the swings speed it up, and the first ten swings tell you what today's hinge looks like before you commit to twenty minutes of it. The cleans keep the Heavy day's opening lift practised every session.
 
 **During:** a visible timer, a way to count rounds you don't have to think about (a tally on paper, or a clicker), and water within reach.
 
@@ -289,10 +325,10 @@ Concurrent strength and conditioning training does interfere — but mostly with
 One line per session, in any notes app.
 
 ```
-Date | Session (Pace / Heavy / Push) | Bell | Rounds + partial | RPE /10 | Nasal? Y/N | Notes
+Date | Session (Pace / Heavy / Push / Benchmark) | Bell | Rounds + partial | RPE /10 | Nasal? Y/N | Notes
 ```
 
-The Benchmark score every four weeks answers the big question. The Push log answers the weekly one — *did I beat last time?* The Nasal column keeps the Pace day honest, which is the column people stop filling in first, and it's the one that matters most.
+The Benchmark score every four weeks answers the big question. Record it in the [Kettlebell Benchmark Log](content/exercise/strength/kettlebell-log.md). The Push log answers the weekly one — *did I beat last time?* The Nasal column keeps the Pace day honest, which is the column people stop filling in first, and it's the one that matters most.
 
 ---
 
@@ -338,6 +374,8 @@ See [Recovery & Sleep](content/exercise/recovery-sleep.md) and [Active vs. Passi
 
 ## See Also
 
+- [Kettlebell Sessions](content/exercise/strength/kettlebell-sessions.md) — just the three workouts, warm-ups included, for use at the gym
+- [Kettlebell Benchmark Log](content/exercise/strength/kettlebell-log.md) — your Benchmark scores, week by week
 - [Year One Gym Program](content/exercise/strength/gym-program.md) — the barbell program this pairs with
 - [Relative Strength](content/exercise/strength/relative-strength.md) — why heavy-and-rested beats light-and-breathless for getting strong
 - [Movements & Equipment](content/exercise/strength/movement-library.md) — where the kettlebell patterns sit among the alternatives
